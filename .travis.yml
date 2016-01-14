@@ -1,0 +1,21 @@
+language: node_js
+
+node_js:
+  - '0.12'
+  - '0.10'
+
+cache:
+  directories:
+    - node_modules
+
+deploy:
+  provider: npm
+  email: open-source@goodeggs.com
+  api_key:
+    secure: "A87N/tVbARUSlcEyEc0KEs+K3HY42PtLX9JMN/XO9CrbltvA/d7dXphRII+V3v0Ppdiu5UZUaX0fQY/kEl/WT1Ov5OlcTca6XPUYCnQkD7DCAf1C3zUkpLFdQV0u0C9RRFNR9Loi9jkFuj2sFSFtPEnlIKD2pvBHtrjJSMHRvAbKA/nwFPGmdl3FqVUCTljfWYDsa3SGrKNeRaO7CYb0Icth/JAU2gORGslfVNd0OlJGYCz3qsg2DCcjLGHRCWmvJSzCklK47qRoqx+2DjLcvsfKUYkAzGN9TW7zICbCmPTIVC8RWm3YAIoo374iBpcxmPTj2Oo6BwhygpyP9sbF6WdLraAf8yNW1x9ClBSGpchKNwGFjboqEVZPyAp7lqFS3QrlN1pVzvRA3Jyw5/0zantxNx6AJGseCSn3UV99uO7X7hMRMyzowzjRgvoULTVdgb3Oqj2+8y+UiakEf57a5ui4o69Mk/m2jPBgAo+oPsJvm2txJ5iHPDD4XzQ6fRWO66c1EvjK1HmL+V7d+ZECMCdWh6sdhfIyvdGk7ePsr62elsPy94TI2otI6+L1S5APvZkFgwZPDh2ejV6Br+7FFacjM2BBeIjgOlkzGkqgQsma3FiUTj8ais3zLd9Zr1kpmdhyOVHRpiRWww/Td2m67FsSpUXGGQ17TVP8FCOdYDI="
+  clean_up: false
+  on:
+    tags: true
+    all_branches: true
+    node: '0.12'
+
