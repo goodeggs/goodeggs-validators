@@ -1,0 +1,41 @@
+{
+  "name": "goodeggs-validators",
+  "version": "1.0.0",
+  "description": "validators for good eggs",
+  "author": "Good Eggs <open-source@goodeggs.com>",
+  "contributors": [
+    "Bob Zoller <bob@zoller.us>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/goodeggs/goodeggs-validators.git"
+  },
+  "homepage": "https://github.com/goodeggs/goodeggs-validators",
+  "bugs": "https://github.com/goodeggs/goodeggs-validators/issues",
+  "main": "build/src/index.js",
+  "dependencies": {
+    "source-map-support": "^0.3.1"
+  },
+  "devDependencies": {
+    "babel": "^4.7.12",
+    "babel-eslint": "^2.0.2",
+    "chai": "^3.0.0",
+    "dirty-chai": "^1.2.2",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.1.0",
+    "gulp-eslint": "^0.14.0",
+    "gulp-header": "^1.2.2",
+    "gulp-mocha": "^2.1.2",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rimraf": "^0.2.0",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-util": "^3.0.5"
+  },
+  "scripts": {
+    "prepublish": "gulp compile"
+  },
+  "publishConfig": {
+    "registry": "https://npm.goodeggs.com/",
+    "always-auth": true
+  }
+}
