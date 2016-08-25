@@ -14,11 +14,11 @@
   "bugs": "https://github.com/goodeggs/goodeggs-validators/issues",
   "main": "build/src/index.js",
   "dependencies": {
-    "source-map-support": "^0.3.1"
+    "source-map-support": "^0.4.2"
   },
   "devDependencies": {
-    "babel": "^4.7.12",
-    "babel-eslint": "^2.0.2",
+    "babel": "^6.5.2",
+    "babel-eslint": "^6.1.2",
     "chai": "^3.0.0",
     "dirty-chai": "^1.2.2",
     "gulp": "^3.9.0",
