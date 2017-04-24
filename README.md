@@ -15,6 +15,10 @@ npm install goodeggs-validators
 import {email} from 'goodeggs-validators';
 email("bob@example.com") //=> true
 email("bob@foo@example.com") //=> false
+
+import {objectid} from 'goodeggs-validators';
+objectid("562fb4f29524e80300c983d8") //=> true
+objectid("qq2-o399cw") //=> false
 ```
 
 
