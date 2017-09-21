@@ -1,12 +1,11 @@
 var gulp = require("gulp"),
-    util = require("gulp-util"),
-    mocha = require("gulp-mocha")
+    mocha = require("gulp-mocha"),
     compiler = require("gulp-babel"),
     sourcemap = require("gulp-sourcemaps");
-    header = require("gulp-header"),
     eslint = require('gulp-eslint'),
     plumber = require('gulp-plumber'),
-    rimraf = require('gulp-rimraf');
+    rimraf = require('gulp-rimraf'),
+    sourceMapSupport = require('source-map-support');
 
 gulp.task('default', ['test']);
 
@@ -15,16 +14,16 @@ gulp.task("watch", function(){
 });
 
 gulp.task('test', ['clean','compile'], function(){
+  sourceMapSupport.install();
   return gulp.src("build/src/**/*.spec.js")
     .pipe(mocha());
 });
 
 gulp.task('compile',['lint'], function(){
   return gulp.src('src/**/*.js')
-    .pipe(header("require('source-map-support').install();"))
     .pipe(sourcemap.init())
     .pipe(compiler())
-    .pipe(sourcemap.write("."))
+    .pipe(sourcemap.write('.', {sourceRoot: '../../src/'}))
     .pipe(gulp.dest("build/src"));
 });
 

@@ -13,9 +13,7 @@
   "homepage": "https://github.com/goodeggs/goodeggs-validators",
   "bugs": "https://github.com/goodeggs/goodeggs-validators/issues",
   "main": "build/src/index.js",
-  "dependencies": {
-    "source-map-support": "^0.4.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-eslint": "^6.1.2",
@@ -24,12 +22,11 @@
     "gulp": "^3.9.0",
     "gulp-babel": "^5.1.0",
     "gulp-eslint": "^0.14.0",
-    "gulp-header": "^1.2.2",
     "gulp-mocha": "^2.1.2",
     "gulp-plumber": "^1.0.1",
     "gulp-rimraf": "^0.2.0",
-    "gulp-sourcemaps": "^1.5.2",
-    "gulp-util": "^3.0.5"
+    "gulp-sourcemaps": "~1.5.2",
+    "source-map-support": "^0.4.18"
   },
   "scripts": {
     "prepublish": "gulp compile",
