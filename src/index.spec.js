@@ -15,6 +15,9 @@ describe('email', () => {
   it('accepts username with UTF8 characters', () => {
     expect(email('b☃b@example.com')).to.be.true();
   });
+  it('accepts username multi-level domaim', () => {
+    expect(email('bob@mail.example.com')).to.be.true();
+  });
   it('rejects without a username', () => {
     expect(email('@example.com')).to.be.false();
   });
@@ -26,6 +29,9 @@ describe('email', () => {
   });
   it('rejects with >1 @ sign', () => {
     expect(email('bob@foo@example.com')).to.be.false();
+  });
+  it('rejects with a period at the end', () => {
+    expect(email('bob@example.com.')).to.be.false();
   });
 });
 
