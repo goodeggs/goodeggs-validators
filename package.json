@@ -1,6 +1,6 @@
 {
   "name": "goodeggs-validators",
-  "version": "1.0.5",
+  "version": "2.0.1",
   "description": "validators for good eggs",
   "author": "Good Eggs <open-source@goodeggs.com>",
   "contributors": [
@@ -29,7 +29,7 @@
     "source-map-support": "^0.4.18"
   },
   "scripts": {
-    "prepublish": "gulp compile",
+    "prepublish": "gulp compile && cp src/index.d.ts build/src/index.d.ts",
     "test": "gulp test"
   },
   "publishConfig": {
