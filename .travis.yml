@@ -1,8 +1,6 @@
 language: node_js
-
 node_js:
-  - '0.12'
-  - '0.10'
+  - "14"
 
 cache:
   directories:
@@ -18,5 +16,4 @@ deploy:
   on:
     tags: true
     all_branches: true
-    node: '0.12'
-
+    node: "14"
