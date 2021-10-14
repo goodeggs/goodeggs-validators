@@ -31,7 +31,7 @@
     "tsc": "tsc"
   },
   "publishConfig": {
-    "registry": "https://npm.goodeggs.com/",
-    "always-auth": true
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   }
 }
