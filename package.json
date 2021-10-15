@@ -24,7 +24,6 @@
     "typescript": "^4.4.4"
   },
   "scripts": {
-    "prepublish": "echo 'hi'",
     "compile": "yarn clean && tsc -p tsconfig.build.json",
     "clean": "rm -rf lib",
     "test": "jest",
