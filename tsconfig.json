@@ -1,7 +1,12 @@
 {
-  "extends": "@goodeggs/tsconfig/base",
+  "extends": "@goodeggs/tsconfig/base.json",
   "compilerOptions": {
-    "outDir": "lib"
+    "rootDir": "src/",
+    "downlevelIteration": true,
+    "noImplicitAny": false,
+    "allowJs": true
   },
-  "include": ["src/*", "test/*", "types"]
+  "include": [
+    "src/**/*.ts"
+  ]
 }
