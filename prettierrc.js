@@ -1,1 +1,1 @@
-module.exports = require('@goodeggs/toolkit/config/prettier');
+export { default } from "@goodeggs/toolkit/config/prettier";
