@@ -39,12 +39,6 @@ To run tests:
 yarn run test
 ```
 
-To run lint:
-
-```
-yarn run test
-```
-
 ## Releasing
 
 To release a new version of this module, use yarn to bump the version
