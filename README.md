@@ -11,13 +11,13 @@ yarn add goodeggs-validators
 ```
 
 ```javascript
-import { email } from "goodeggs-validators";
-email("bob@example.com"); //=> true
-email("bob@foo@example.com"); //=> false
+import {email} from 'goodeggs-validators';
+email('bob@example.com'); //=> true
+email('bob@foo@example.com'); //=> false
 
-import { objectid } from "goodeggs-validators";
-objectid("562fb4f29524e80300c983d8"); //=> true
-objectid("qq2-o399cw"); //=> false
+import {objectid} from 'goodeggs-validators';
+objectid('562fb4f29524e80300c983d8'); //=> true
+objectid('qq2-o399cw'); //=> false
 ```
 
 ## Contributing
@@ -47,3 +47,4 @@ then push the commit and tag:
 ```sh
 yarn publish --new-version=<major|minor|patch|premajor|preminor|prepatch>
 git push --follow-tags
+```
