@@ -10,7 +10,7 @@ module.exports = {
   overrides: [
     {
       files: ["**/{*.,}test{.*,}.{js,jsx,ts,tsx}"],
-      extends: ["plugin:goodeggs/mocha"],
+      extends: ["plugin:goodeggs/jest"],
       env: {
         mocha: true,
       },

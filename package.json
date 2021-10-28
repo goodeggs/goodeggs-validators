@@ -38,7 +38,7 @@
     "lint:es": "getk run lint-es",
     "lint:fix": "yarn run lint:fix:es",
     "lint:fix:es": "getk run fix-es",
-    "prepublishOnly": "yarn lint && yarn test && yarn run build",
+    "prepublishOnly": "yarn run build",
     "test": "jest src/",
     "typecheck": "tsc"
   },
