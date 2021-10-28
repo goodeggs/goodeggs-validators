@@ -13,6 +13,7 @@
   "homepage": "https://github.com/goodeggs/goodeggs-validators",
   "bugs": "https://github.com/goodeggs/goodeggs-validators/issues",
   "main": "lib/index.js",
+  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.15.7",
     "@babel/core": "^7.15.8",
@@ -43,7 +44,7 @@
     "typecheck": "tsc"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "access": "public"
+    "registry": "https://npm.goodeggs.com/",
+    "always-auth": true
   }
 }
