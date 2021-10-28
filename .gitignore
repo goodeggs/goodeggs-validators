@@ -1,3 +1,6 @@
-/node_modules/
-/build/
-npm-debug.log
+*.log
+.coverage/
+lib/
+node_modules/
+.node_history
+.*cache
