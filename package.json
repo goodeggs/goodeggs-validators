@@ -16,8 +16,8 @@
   "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.22.15",
-    "@babel/core": "^7.22.17",
-    "@babel/node": "^7.22.15",
+    "@babel/core": "^7.22.19",
+    "@babel/node": "^7.22.19",
     "@babel/plugin-transform-runtime": "^7.22.15",
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.22.15",
