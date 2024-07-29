@@ -17,10 +17,10 @@
   "devDependencies": {
     "@babel/cli": "^7.24.8",
     "@babel/core": "^7.24.9",
-    "@babel/node": "^7.24.8",
+    "@babel/node": "^7.25.0",
     "@babel/plugin-transform-runtime": "^7.24.7",
     "@babel/polyfill": "^7.12.1",
-    "@babel/preset-env": "^7.24.8",
+    "@babel/preset-env": "^7.25.0",
     "@babel/preset-typescript": "^7.24.7",
     "@babel/register": "^7.24.6",
     "@goodeggs/toolkit": "^7.0.1",
